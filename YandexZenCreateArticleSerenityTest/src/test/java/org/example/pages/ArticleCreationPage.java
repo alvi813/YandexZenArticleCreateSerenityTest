@@ -59,8 +59,8 @@ public class ArticleCreationPage extends PageObject {
     @FindBy(xpath = "//img[@class='zen-editor-block-image__image']")
     private WebElementFacade image;
 
-    // загрузка картинки:
-    @FindBy(xpath = "//span[contains(text(), 'загружается')]")
+    // загрузка картинки (на картинке появляется надпись "Загружается..."):
+    @FindBy(xpath = "//span[@class='zen-editor-block-image__loading']")
     private WebElementFacade loadingImage;
 
     //--------------------------------------------------------------
